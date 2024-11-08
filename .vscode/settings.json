@@ -1,0 +1,13 @@
+{
+  "material-icon-theme.folders.associations": {
+    "sections": "views"
+  },
+
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+
+  "explorer.fileNesting.patterns": {
+    "tsconfig.json": "tsconfig.*.json, *.d.ts",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, .eslintrc.cjs, .prettierrc.json"
+  }
+}
