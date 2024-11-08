@@ -1,0 +1,17 @@
+[
+  {
+    "en": "About",
+    "de": "Um",
+    "to": "#about"
+  },
+  {
+    "en": "Demos",
+    "de": "Demos",
+    "to": "#demos"
+  },
+  {
+    "en": "Reach out",
+    "de": "Kontakt",
+    "to": "#contact"
+  }
+]

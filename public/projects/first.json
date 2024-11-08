@@ -1,0 +1,16 @@
+{
+  "youtube": "http://youtube.com",
+  "instagram": "http://instagram.com",
+  "link": "https://youtube.com",
+
+  "image": "https://i.pinimg.com/originals/a2/28/8d/a2288dc520df3d7f3abbc55f702c8690.jpg",
+
+  "en": {
+    "title": "The road of the eagles",
+    "subtitle": "Tagline"
+  },
+
+  "de": {
+    "title": "Erste"
+  }
+}

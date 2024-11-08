@@ -1,0 +1,39 @@
+{
+  "en": {
+    "title": "Composer \n& Guitar Teacher",
+    "play": "Play",
+    "pause": "Pause",
+    "volume": "Volume",
+
+    "demos": {
+      "title": "Demos"
+    },
+
+    "projects": {
+      "title": "Projects"
+    },
+
+    "contact": {
+      "tagline": "Let me know how I can help."
+    }
+  },
+
+  "de": {
+    "title": "Komponist \n& Gitarrenlehrer",
+    "play": "Abspielen",
+    "pause": "Pausieren",
+    "volume": "Volumen",
+
+    "demos": {
+      "title": "Demos"
+    },
+
+    "projects": {
+      "title": "Projekte"
+    },
+
+    "contact": {
+      "tagline": "Lassen Sie mich wissen, wie ich helfen kann."
+    }
+  }
+}

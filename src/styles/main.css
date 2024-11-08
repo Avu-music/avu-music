@@ -1,0 +1,186 @@
+@import './fonts.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+/* ===== Colors ===== */
+
+:root {
+  --background: #111316;
+  --highlighted-background: #1c1e22;
+  --image-fallback-background: #d2d2d2;
+
+  --color: #f9f9f9;
+  --accent: #72a3ff;
+
+  --gap: 1rem;
+  --giant-gap: 2.5rem;
+
+  --br: 4px;
+}
+
+/* ===== Layout ===== */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--gap);
+}
+
+main {
+  display: grid;
+  gap: calc(var(--giant-gap) * 2);
+  font-size: 1rem;
+  justify-content: center;
+}
+
+#demos,
+#about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+
+  scroll-margin-top: var(--giant-gap);
+}
+
+#demos {
+  gap: var(--gap);
+}
+
+#about {
+  gap: var(--giant-gap);
+}
+
+#demos img,
+#about img {
+  min-height: 100%;
+}
+
+#demos {
+  width: min(100dvw, 80rem);
+  margin: 0 auto;
+}
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap);
+}
+
+#contact {
+  width: 100dvw;
+  margin: 0 auto;
+}
+
+header,
+main > *:not(#demos):not(#contact) {
+  width: min(90dvw, 60rem);
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 750px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header,
+  main > *:not(#demos):not(#contact) {
+    width: 90dvw;
+  }
+
+  #demos {
+    width: 100%;
+  }
+
+  #demos,
+  #about {
+    grid-template-columns: 1fr;
+  }
+
+  #demos {
+    gap: 0;
+  }
+
+  #about {
+    gap: var(--gap);
+  }
+}
+
+/* ===== Theme ===== */
+
+#demos,
+#contact {
+  background-color: var(--highlighted-background);
+}
+
+body,
+html {
+  background-color: var(--background);
+  color: var(--color);
+}
+
+a {
+  color: var(--color);
+}
+
+/* ===== Images ===== */
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  background-color: var(--image-fallback-background);
+  background-size: cover;
+}
+
+svg:not(.youtube-icon):not(.instagram-icon):not(.wave) {
+  width: 1em;
+  height: 1em;
+}
+
+#demos .image,
+#about .image {
+  position: relative;
+}
+
+#demos .image::before,
+#about .image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+
+  background-color: var(--background);
+  mix-blend-mode: color;
+}
+
+#about img {
+  border-radius: var(--br);
+}
+
+/* ===== Misc ===== */
+button {
+  background: none;
+  border: none;
+
+  font-size: 100%;
+  color: var(--color);
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--gap) / 2);
+}
