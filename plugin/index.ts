@@ -61,7 +61,7 @@ const getDemos = () => {
 
     return {
       ...JSON.parse(readFileSync(path).toString()),
-      url: `/demos/${file}`.replace('.json', '.wav')
+      url: `/avu-music/demos/${file}`.replace('.json', '.wav')
     }
   })
 }

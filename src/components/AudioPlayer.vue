@@ -51,7 +51,7 @@
     },
 
     dataUri: {
-      arraybuffer: '/waveform.dat'
+      arraybuffer: '/avu-music/waveform.dat'
     }
   }))
 
