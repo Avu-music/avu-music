@@ -43,7 +43,7 @@ main {
 #demos,
 #about {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   place-content: center;
 
   scroll-margin-top: var(--giant-gap);
