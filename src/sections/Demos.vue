@@ -61,7 +61,13 @@
     gap: var(--gap);
   }
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 70rem) {
+    li {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (max-width: 55rem) {
     .text {
       padding: var(--giant-gap);
     }

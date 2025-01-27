@@ -53,7 +53,7 @@
     color: var(--background);
   }
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 55rem) {
     a.standout {
       border-width: 0px;
       padding: 0;

@@ -70,9 +70,13 @@
     text-decoration: none;
     padding-top: 1rem;
     gap: var(--gap);
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 55rem) {
     .email {
       font-size: 3.5rem;
     }

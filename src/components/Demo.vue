@@ -105,9 +105,16 @@
     --tag-color: rgb(31, 233, 81);
   }
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 55rem) {
     .title {
       font-size: 1.75rem;
+    }
+  }
+
+  @media screen and (max-width: 70rem) {
+    button {
+      min-width: 100%;
+      justify-content: start;
     }
   }
 </style>

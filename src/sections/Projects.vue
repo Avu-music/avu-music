@@ -120,7 +120,7 @@
     text-decoration: none;
   }
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 55rem) {
     h2 {
       text-align: center;
     }

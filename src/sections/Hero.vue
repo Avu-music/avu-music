@@ -28,7 +28,7 @@
     text-align: center;
   }
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 55rem) {
     h2 {
       white-space: normal;
       text-align: center;
