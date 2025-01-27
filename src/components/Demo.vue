@@ -69,9 +69,40 @@
     --tag-color: rgb(114, 163, 255);
   }
 
-  [data-tag='epic'],
-  [data-tag='epos'] {
-    --tag-color: rgb(235, 146, 204);
+  [data-tag='jazz'] {
+    --tag-color: rgb(255, 238, 7);
+  }
+
+  [data-tag='electronic'] {
+    --tag-color: rgb(157, 114, 236);
+  }
+
+  [data-tag='synthesizer'] {
+    --tag-color: rgb(147, 220, 223);
+  }
+
+  [data-tag='pop'] {
+    --tag-color: rgb(231, 169, 240);
+  }
+
+  [data-tag='action'] {
+    --tag-color: rgb(245, 123, 123);
+  }
+
+  [data-tag='western'] {
+    --tag-color: rgb(155, 128, 93);
+  }
+
+  [data-tag='country'] {
+    --tag-color: rgb(209, 181, 121);
+  }
+
+  [data-tag='christmas'] {
+    --tag-color: rgb(218, 230, 252);
+  }
+
+  [data-tag='epic'] {
+    --tag-color: rgb(31, 233, 81);
   }
 
   @media screen and (max-width: 750px) {
