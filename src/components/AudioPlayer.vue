@@ -64,9 +64,11 @@
   }
 
   onMounted(() => {
-    Peaks.init(options.value, async (_, instance) => {
-      peaksInstance.value = instance
-    })
+    setTimeout(() => {
+      Peaks.init(options.value, async (e, instance) => {
+        peaksInstance.value = instance
+      })
+    }, 0)
   })
 
   watch(volume, (newVolume) => {
