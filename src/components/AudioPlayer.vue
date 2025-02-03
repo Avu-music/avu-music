@@ -3,7 +3,7 @@
     <div ref="overviewElement" class="player" />
   </div>
 
-  <audio ref="audioElement" :src="src" :type="`audio/wav`" />
+  <audio ref="audioElement" :src="src" type="audio/wav" />
 </template>
 
 <script lang="ts" setup>
@@ -18,8 +18,6 @@
 
   const peaksInstance = ref<PeaksInstance>()
 
-  const audioBuffer = ref<AudioBuffer>()
-
   const volume = ref(20)
 
   // const volumePercentage = computed(() => ({
@@ -28,10 +26,7 @@
   // }))
 
   const sourceOptions = computed<SetSourceOptions>(() => ({
-    mediaUrl: src.value,
-    webAudio: {
-      audioBuffer: audioBuffer.value
-    }
+    mediaUrl: src.value
   }))
 
   const options = computed<PeaksOptions>(() => ({
@@ -55,14 +50,6 @@
     }
   }))
 
-  const getAudioBuffer = async (url: string) => {
-    const file = await fetch(url)
-
-    const arrayBuffer = await file.arrayBuffer()
-
-    return new AudioContext().decodeAudioData(arrayBuffer)
-  }
-
   onMounted(() => {
     setTimeout(() => {
       Peaks.init(options.value, async (e, instance) => {
@@ -75,14 +62,6 @@
     if (audioElement.value) {
       audioElement.value.volume = newVolume / 100
     }
-  })
-
-  watch(src, async (newSrc) => {
-    if (!newSrc) {
-      return peaksInstance.value?.player.pause()
-    }
-
-    audioBuffer.value = await getAudioBuffer(newSrc)
   })
 
   watch(sourceOptions, (newSourceOptions) => {
