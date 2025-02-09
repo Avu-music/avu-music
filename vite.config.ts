@@ -9,7 +9,7 @@ import { content } from './plugin'
 
 export default defineConfig({
   plugins: [vue(), vueDevTools(), content()],
-  base: '/avu-music/',
+  base: '',
 
   resolve: {
     alias: {
