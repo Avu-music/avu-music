@@ -12,7 +12,7 @@
         alt=""
         height="1828"
         width="1504"
-        style="background-image: url(/avu-music/photos/portrait-low-quality.jpg)"
+        style="background-image: url(/photos/portrait-low-quality.jpg)"
       />
     </div>
   </div>

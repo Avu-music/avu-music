@@ -6,7 +6,7 @@
         alt=""
         height="2029"
         width="1619"
-        style="background-image: url(/avu-music/photos/guitar-low-quality.jpg)"
+        style="background-image: url(/photos/guitar-low-quality.jpg)"
       />
     </div>
 
