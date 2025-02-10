@@ -1,7 +1,7 @@
 <template>
   <div id="contact">
     <span>{{ translations.contact.tagline }}</span>
-    <span class="email">avu@avu-music.com</span>
+    <span class="email">avu.music@t-online.de</span>
 
     <div class="social-media">
       <a href="https://www.youtube.com/@avu.composer">

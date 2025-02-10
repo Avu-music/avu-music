@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1>Björn</h1>
+    <h1>Björn Murra</h1>
 
     <nav>
       <a
