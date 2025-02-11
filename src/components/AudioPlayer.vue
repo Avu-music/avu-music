@@ -18,13 +18,6 @@
 
   const peaksInstance = ref<PeaksInstance>()
 
-  const volume = ref(20)
-
-  // const volumePercentage = computed(() => ({
-  //   volume: `${volume.value}%`,
-  //   remaining: `${volume.value}%`
-  // }))
-
   const sourceOptions = computed<SetSourceOptions>(() => ({
     mediaUrl: src.value
   }))
@@ -52,22 +45,18 @@
 
   onMounted(() => {
     setTimeout(() => {
-      Peaks.init(options.value, async (e, instance) => {
+      Peaks.init(options.value, async (_, instance) => {
         peaksInstance.value = instance
       })
-    }, 0)
-  })
-
-  watch(volume, (newVolume) => {
-    if (audioElement.value) {
-      audioElement.value.volume = newVolume / 100
-    }
+    }, 250)
   })
 
   watch(sourceOptions, (newSourceOptions) => {
-    peaksInstance.value?.setSource(newSourceOptions, async () => {
-      await peaksInstance.value?.player.play()
-    })
+    setTimeout(() => {
+      peaksInstance.value?.setSource(newSourceOptions, async () => {
+        await peaksInstance.value?.player.play()
+      })
+    }, 0)
   })
 
   watch(peaksInstance, (newPeaksInstance) => {
@@ -76,12 +65,6 @@
     window.addEventListener('resize', () => {
       newPeaksInstance?.views.getView('overview')?.fitToContainer()
     })
-  })
-
-  onMounted(() => {
-    if (audioElement.value) {
-      audioElement.value.volume = volume.value / 100
-    }
   })
 </script>
 

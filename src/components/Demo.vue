@@ -1,5 +1,5 @@
 <template>
-  <button @click="src === url ? (src = undefined) : (src = url)">
+  <button type="button" @click="onClick">
     <Pause v-if="src === url" :aria-label="translations.pause" />
     <Play v-else :aria-label="translations.play" />
 
@@ -20,9 +20,13 @@
   import Play from '@/assets/icons/Play.vue'
   import Pause from '@/assets/icons/Pause.vue'
 
-  defineProps<Demo['en'] & { url: string }>()
+  const props = defineProps<Demo['en'] & { url: string }>()
 
   const { translations } = useContent()
+
+  const onClick = () => {
+    src.value = src.value === props.url ? undefined : props.url
+  }
 </script>
 
 <style scoped>
