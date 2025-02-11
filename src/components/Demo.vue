@@ -38,9 +38,15 @@
 
   button:focus-visible,
   button:hover {
-    text-transform: uppercase;
     outline: none;
     text-decoration: underline;
+  }
+
+  @media (pointer: fine) {
+    button:focus-visible,
+    button:hover {
+      text-transform: uppercase;
+    }
   }
 
   .title {
