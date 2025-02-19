@@ -151,8 +151,7 @@ svg:not(.youtube-icon):not(.instagram-icon):not(.wave) {
   position: relative;
 }
 
-#demos .image::before,
-#about .image::before {
+#demos .image::before {
   content: '';
   position: absolute;
   top: 0;

@@ -8,7 +8,7 @@
 
     <div class="image">
       <img
-        src="/photos/portrait.png"
+        src="/photos/portrait.jpg"
         alt=""
         height="1828"
         width="1504"
