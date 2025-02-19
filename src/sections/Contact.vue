@@ -1,7 +1,11 @@
 <template>
   <div id="contact">
     <span>{{ translations.contact.tagline }}</span>
-    <span class="email">avu.music@t-online.de</span>
+
+    <div class="email">
+      <span>avu.music</span>
+      <span> @t-online.de </span>
+    </div>
 
     <div class="social-media">
       <a href="https://www.youtube.com/@avu.composer">
@@ -45,6 +49,10 @@
     font-weight: 700;
 
     padding-top: var(--gap);
+
+    span {
+      display: inline-block;
+    }
   }
 
   .social-media {
@@ -78,7 +86,7 @@
 
   @media screen and (max-width: 55rem) {
     .email {
-      font-size: 3.5rem;
+      font-size: 2.75rem;
     }
 
     .wave {
