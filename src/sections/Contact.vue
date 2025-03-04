@@ -8,15 +8,15 @@
     </div>
 
     <div class="social-media">
-      <a href="https://www.youtube.com/@avu.composer">
+      <a href="https://www.youtube.com/@bjornmurra">
         <Youtube class="youtube-icon" />
-        avu.composer
+        bjornmurra
       </a>
 
       <Wave class="wave" />
 
-      <a href="https://www.instagram.com/avu.music/">
-        avu.music
+      <a href="https://www.instagram.com/bjornmurra/">
+        bjornmurra
         <Instagram class="instagram-icon" />
       </a>
     </div>
