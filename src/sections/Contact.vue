@@ -16,7 +16,7 @@
       <Wave class="wave" />
 
       <a href="https://www.instagram.com/bjornmurra" target="_blank">
-        avu.music
+        bjornmurra
         <Instagram class="instagram-icon" />
       </a>
     </div>
