@@ -9,11 +9,16 @@
       :style="`background-image: url(${project.image})`"
     >
       <div class="socials" v-if="project.youtube || project.instagram">
-        <a v-if="project.youtube" :href="project.youtube" aria-label="YouTube">
+        <a v-if="project.youtube" :href="project.youtube" aria-label="YouTube" target="_blank">
           <Youtube class="youtube-icon" />
         </a>
 
-        <a v-if="project.instagram" :href="project.instagram" aria-label="Instagram">
+        <a
+          v-if="project.instagram"
+          :href="project.instagram"
+          aria-label="Instagram"
+          target="_blank"
+        >
           <Instagram class="instagram-icon" />
         </a>
       </div>
@@ -22,7 +27,12 @@
         {{ project.subtitle }}
       </div>
 
-      <component :is="project.link ? 'a' : 'span'" :href="project.link" class="title">
+      <component
+        :is="project.link ? 'a' : 'span'"
+        :href="project.link"
+        class="title"
+        target="_blank"
+      >
         {{ project.title }}
         <span v-if="project.link">→</span>
       </component>
