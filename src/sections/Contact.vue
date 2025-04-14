@@ -10,7 +10,7 @@
     <div class="social-media">
       <a href="https://www.youtube.com/@bjornmurra" target="_blank">
         <Youtube class="youtube-icon" />
-        avu.composer
+        bjornmurra
       </a>
 
       <Wave class="wave" />
