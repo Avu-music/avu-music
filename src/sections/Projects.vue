@@ -56,7 +56,7 @@
 
   .project {
     position: relative;
-    width: calc(20% - var(--gap));
+    width: calc(30% - var(--gap));
     height: 15rem;
 
     padding: var(--gap);
