@@ -79,8 +79,16 @@
     --tag-color: rgb(114, 163, 255);
   }
 
+  [data-tag='atmosphere'] {
+    --tag-color: rgba(217, 133, 37, 1);
+  }
+
   [data-tag='jazz'] {
     --tag-color: rgb(255, 238, 7);
+  }
+
+  [data-tag='noir'] {
+    --tag-color: rgba(114, 111, 111, 1);
   }
 
   [data-tag='electronic'] {
@@ -96,7 +104,7 @@
   }
 
   [data-tag='action'] {
-    --tag-color: rgb(245, 123, 123);
+    --tag-color: rgba(225, 62, 62, 1);
   }
 
   [data-tag='western'] {
@@ -113,6 +121,10 @@
 
   [data-tag='epic'] {
     --tag-color: rgb(31, 233, 81);
+  }
+
+  [data-tag='commercial'] {
+    --tag-color: rgba(35, 5, 185, 1);
   }
 
   @media screen and (max-width: 55rem) {
