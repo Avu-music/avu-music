@@ -3,8 +3,8 @@
     <span>{{ translations.contact.tagline }}</span>
 
     <div class="email">
-      <span>avu.music</span>
-      <span> @t-online.de </span>
+      <span>info</span>
+      <span> @bjornmurra.com </span>
     </div>
 
     <div class="social-media">
