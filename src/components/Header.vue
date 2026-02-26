@@ -1,6 +1,8 @@
 <template>
   <header>
-    <h1>Björn Murra</h1>
+    <h1>
+      <router-link to="/">Björn Murra</router-link>
+    </h1>
 
     <nav>
       <a

@@ -27,6 +27,10 @@
 
 /* ===== Layout ===== */
 
+html {
+  scrollbar-gutter: stable;
+}
+
 header {
   display: flex;
   justify-content: space-between;
