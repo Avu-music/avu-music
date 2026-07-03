@@ -127,6 +127,11 @@
     --tag-color: rgba(35, 5, 185, 1);
   }
 
+  [data-tag='metal'] {
+    --tag-color: rgb(206, 81, 81);
+    color: rgb(176, 102, 102);
+  }
+
   @media screen and (max-width: 55rem) {
     .title {
       font-size: 1.75rem;
